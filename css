@@ -1,0 +1,86 @@
+-- Gui to Lua
+
+
+-- Version: 3.2
+
+
+
+-- Instances:
+
+
+
+local ScreenGui = Instance.new("ScreenGui")
+
+
+local Frame = Instance.new("Frame")
+
+
+local UICorner = Instance.new("UICorner")
+
+
+local TextLabel = Instance.new("TextLabel")
+
+
+
+--Properties:
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+
+Frame.Parent = ScreenGui
+
+
+Frame.BackgroundColor3 = Color3.fromRGB(173, 220, 64)
+
+
+Frame.Position = UDim2.new(0.725718737, 0, 0.82802552, 0)
+
+
+Frame.Size = UDim2.new(0, 373, 0, 100)
+
+
+
+UICorner.Parent = Frame
+
+
+
+TextLabel.Parent = Frame
+
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(173, 220, 64)
+
+
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+
+
+TextLabel.BorderSizePixel = 0
+
+
+TextLabel.Position = UDim2.new(0.104557641, 0, 0.25, 0)
+
+
+TextLabel.Size = UDim2.new(0, 293, 0, 50)
+
+
+TextLabel.Font = Enum.Font.SourceSans
+
+
+TextLabel.Text = "OmegaX injected."
+
+
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel.TextSize = 36.000
+
+
+wait(3)
+
+
+ScreenGui.Enabled = false
